@@ -97,6 +97,7 @@ Start off by finding out how many modules there are. Make a function called ```c
 Use your JavaScript skills to write a function called ```countEssential()``` which will count how many modules from the ```availableModules``` array have the essential flag set.
 
 >**Hint**
+>
 >This is a bit more complex. We need to loop through the array, and count how many of the modules have the essential flag set. You'll probably want to make a new variable to count the number of essential modules, and then you're going to build a loop. Here's some resources on looping:
 >
 >- [Learn about Looping](https://www.digitalocean.com/community/tutorials/how-to-construct-for-loops-in-javascript)
