@@ -71,12 +71,12 @@ The lights flicker on, and you can see the interior of the ship, along with LARR
 
 What can it be? You've turned the power back on, everything should be back to normal, right? "MODULES NOT ACTIVE!" Modules, what modules? A quick check of the ship's status board reveals an empty array labelled 'modules'.
 
-You flip through the manual to the section labelled 'Modules', where the first page describes a number of available modules. They are stored in memory in the availableModules array. Each module is an object, with four properties:
+You flip through the manual to the section labelled 'Modules', where the first page describes a number of available modules. They are stored in memory in the ```availableModules``` array. Each module is an object, with four properties:
 
-the name of the module is a string
-the size of the module is an integer
-the enabled and essential properties are booleans
-Start off by finding out how many modules there are. Make a function called countModules to reveal how many modules there are to choose from.
+the ```name``` of the module is a string
+the ```size``` of the module is an integer
+the ```enabled``` and ```essential``` properties are booleans
+Start off by finding out how many modules there are. Make a function called ```countModules``` to reveal how many modules there are to choose from.
 
 >**Hint**
 >
@@ -94,7 +94,7 @@ Start off by finding out how many modules there are. Make a function called coun
 
 "QUACK QUACK QUACK QUACK QUACK QUACK QUACK", goes LARRY, his eyes still glowing red. He’s counting off each of the seven modules on the list - you must be on the right track! Now to find out how many of them are essential.
 
-Use your JavaScript skills to write a function called countEssential() which will count how many modules from the availableModules array have the essential flag set.
+Use your JavaScript skills to write a function called ```countEssential()``` which will count how many modules from the ```availableModules``` array have the essential flag set.
 
 >**Hint**
 >This is a bit more complex. We need to loop through the array, and count how many of the modules have the essential flag set. You'll probably want to make a new variable to count the number of essential modules, and then you're going to build a loop. Here's some resources on looping:
@@ -110,13 +110,13 @@ Use your JavaScript skills to write a function called countEssential() which wil
 
 LARRY seemed so happy before, but he really is starting to get a bit agitated. Now that you know there are three essential modules, maybe you should start loading them into the ship's systems.
 
-Write a function called loadModule(). It needs to take a parameter, called index. Your function should be set up like this:
+Write a function called ```loadModule()```. It needs to take a parameter, called ```index```. Your function should be set up like this:
 
-function loadModule(index) { }
+```function loadModule(index) { }```
 
-When loadModule gets the index number of a module, it should load it into the ship's modules property (which is already an array). Before you load it in, set the enabled property to true. You need to loop over the availableModules and find the module called "life-support" and get its index, then use it to call loadModule().
+When ```loadModule``` gets the index number of a module, it should load it into the ship's ```modules``` property (which is already an array). Before you load it in, set the ```enabled``` property to ```true```. You need to loop over the availableModules and find the module called "life-support" and get its index, then use it to call ```loadModule()```.
 
-**Hint:** You need to either loop through availableModules outside of any function or write a seperate function that handles the looping make sure it is called in your code"
+**Hint:** You need to either loop through ```availableModules``` outside of any function or write a seperate function that handles the looping make sure it is called in your code"
 
 >**Hint**
 >
@@ -124,28 +124,27 @@ When loadModule gets the index number of a module, it should load it into the sh
 >
 >**1.** Find the module by its index
 >
->**2.** Set its enabled property to true (Remember setting object properties from challenge #1?)
+>**2.** Set its ```enabled``` property to ```true``` (Remember setting object properties from challenge #1?)
 >
->**3.** Add that module to the ship's modules array.
+>**3.** Add that module to the ship's ```modules``` array.
 >
->The first step is easy, because you just need to access the availableModules array with the index, using the [] notation. For the second step, use the same strategy you used to turn the power on in Challenge #1. The last step uses a method called .push(). You can read up on how array pushing works [here.](https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-mutator-methods#push())
+>The first step is easy, because you just need to access the ```availableModules``` array with the index, using the [] notation. For the second step, use the same strategy you used to turn the power on in Challenge #1. The last step uses a method called ```.push()```. You can read up on how array pushing works [here.](https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-mutator-methods#push())
 >
->Also, don't forget to find the index of the life-support module and use your new loadModule() method to activate it!
+>Also, don't forget to find the index of the ```life-support``` module and use your new ```loadModule()``` method to activate it!
 >
 >[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
 
 ## Challenge #5
 "BREATHE EASIER!" LARRY quacks out. "LITERALLY. Life support module loaded. Propulsion needed."
 
-You can re-use your code from before, but this time you should do what all good programmers do: modularize your code. Write a function called findModuleIndex() which will take in a name that you’re looking for, and return the index of that module in the availableModules array. Remember: it has to have the essential flag, too!
+You can re-use your code from before, but this time you should do what all good programmers do: modularize your code. Write a function called ```findModuleIndex()``` which will take in a name that you’re looking for, and return the index of that module in the ```availableModules``` array. Remember: it has to have the ```essential``` flag, too!
 
-Use your findModuleIndex function to find the "propulsion" module and then load it into the ship's system.
+Use your ```findModuleIndex``` function to find the "propulsion" module and then load it into the ship's system.
 
 >**Hint**
 >
->The good news here is that if you succeeded at the last challenge, you've got all the logic you need to do this one. Remember the work you did to find the life-support module's index? Write a function that does that when you pass it the name of the module as a parameter.
+>The good news here is that if you succeeded at the last challenge, you've got all the logic you need to do this one. Remember the work you did to find the ```life-support``` module's index? Write a function that does that when you pass it the name of the module as a parameter.
 >
 >**Hint:** Make sure you are building on top of the last challenge. ;P
 >
 >[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
-
