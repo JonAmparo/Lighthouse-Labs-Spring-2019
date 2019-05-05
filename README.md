@@ -51,7 +51,7 @@ Your job as captain of the ISS Lighthouse is to use your JavaScript skills to ta
 >
 >**On Functions:**
 >
->[How to define functions in JavaScript](https://github.com/missmatsuko/lighthouse-labs-challenge/tree/master/2019-05#challenge-2)
+>[How to define functions in JavaScript](https://www.digitalocean.com/community/tutorials/how-to-define-functions-in-javascript)
 >
 >[CodeCademy tutorial on Functions](https://www.codecademy.com/courses/learn-javascript/lessons/functions/exercises/intro-to-functions)
 >
@@ -77,6 +77,18 @@ the name of the module is a string
 the size of the module is an integer
 the enabled and essential properties are booleans
 Start off by finding out how many modules there are. Make a function called countModules to reveal how many modules there are to choose from.
+
+>**Hint**
+>
+>While there's a lot of information about the module here, the simple challenge is to find out how many modules there are. They're stored in an array, and what we need is to find out how long the array is. Check out these resources:
+>
+>Here are some Digital Ocean tutorials on [Understanding Arrays in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-arrays-in-javascript)
+>
+>You can also work with arrays on [CodeCademy](https://www.codecademy.com/courses/learn-javascript/lessons/arrays/exercises/arrays)
+>
+>Khan Academy also has some good exercises that you can do [here](https://www.khanacademy.org/computing/computer-programming/programming/arrays/pt/intro-to-arrays)
+>
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
 
 ## Challenge #3
 
