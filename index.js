@@ -1,23 +1,23 @@
-  var navigation = {
-      x: -2,
-      y: "Banana",
-      z: "Beep",
-      speed: "raaaaid"
-    };
+var navigation = {
+  x: -2,
+  y: "Banana",
+  z: "Beep",
+  speed: "raaaaid"
+};
 
-    var ship = {
-      powerOn: false,
-      modules: [],
-      antenna: {
-        active: false
-      }
-    };
+var ship = {
+  powerOn: false,
+  modules: [],
+  antenna: {
+    active: false
+  }
+};
 
-    var radio = {
-      frequency: "Kenneth",
-      message: "Bugs are cool.",
-      beacon: false
-    };
+var radio = {
+  frequency: "Kenneth",
+  message: "Bugs are cool.",
+  beacon: false
+};
 
 var essential;
 
