@@ -96,6 +96,15 @@ Start off by finding out how many modules there are. Make a function called coun
 
 Use your JavaScript skills to write a function called countEssential() which will count how many modules from the availableModules array have the essential flag set.
 
+>**Hint**
+>This is a bit more complex. We need to loop through the array, and count how many of the modules have the essential flag set. You'll probably want to make a new variable to count the number of essential modules, and then you're going to build a loop. Here's some resources on looping:
+>
+>- [Learn about Looping](https://www.digitalocean.com/community/tutorials/how-to-construct-for-loops-in-javascript)
+>
+>- You can also check out [CodeCademy](https://www.codecademy.com/courses/learn-javascript/lessons/loops/exercises/loops)
+>
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
+
 ## Challenge #4
 "DANGER QUACK DANGER QUACK!"
 
@@ -109,9 +118,34 @@ When loadModule gets the index number of a module, it should load it into the sh
 
 **Hint:** You need to either loop through availableModules outside of any function or write a seperate function that handles the looping make sure it is called in your code"
 
+>**Hint**
+>
+>Oh my gosh, there's a few steps here. First, you need to make a new function. We've done that a few times now. Then you need to get that function to do three things:
+>
+>**1.** Find the module by its index
+>
+>**2.** Set its enabled property to true (Remember setting object properties from challenge #1?)
+>
+>**3.** Add that module to the ship's modules array.
+>
+>The first step is easy, because you just need to access the availableModules array with the index, using the [] notation. For the second step, use the same strategy you used to turn the power on in Challenge #1. The last step uses a method called .push(). You can read up on how array pushing works [here.](https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-javascript-mutator-methods#push())
+>
+>Also, don't forget to find the index of the life-support module and use your new loadModule() method to activate it!
+>
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
+
 ## Challenge #5
 "BREATHE EASIER!" LARRY quacks out. "LITERALLY. Life support module loaded. Propulsion needed."
 
 You can re-use your code from before, but this time you should do what all good programmers do: modularize your code. Write a function called findModuleIndex() which will take in a name that you’re looking for, and return the index of that module in the availableModules array. Remember: it has to have the essential flag, too!
 
 Use your findModuleIndex function to find the "propulsion" module and then load it into the ship's system.
+
+>**Hint**
+>
+>The good news here is that if you succeeded at the last challenge, you've got all the logic you need to do this one. Remember the work you did to find the life-support module's index? Write a function that does that when you pass it the name of the module as a parameter.
+>
+>**Hint:** Make sure you are building on top of the last challenge. ;P
+>
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
+
