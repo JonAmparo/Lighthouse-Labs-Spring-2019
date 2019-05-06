@@ -59,13 +59,14 @@ getLifeSupport();
 
 function findModuleIndex(name) {
   for(var i = 0; i < countModules(); i++) {
-    if(availableModules[i].essential&& availableModules[i].name == name) {
+    if(availableModules[i].essential && availableModules[i].name == name) {
       return i;
     } 
   }
 }
 
 loadModule(findModuleIndex("propulsion"));
+loadModule(findModuleIndex("navigation"));
 
 
 
