@@ -78,3 +78,6 @@ function resetLARRY() {
 }
 
 resetLARRY();
+
+findModuleIndex("communication");
+loadModule(findModuleIndex("communication"));
