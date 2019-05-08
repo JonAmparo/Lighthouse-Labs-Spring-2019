@@ -160,7 +160,7 @@ Use your already-defined methods and load in the "navigation" module. It's prett
 >
 >Great news, you have the ability to find a module's index. We need the navigation module's index, and then we want to load that module in, by index.
 >
->[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca)
 
 **Challenge 7 Global Objects**
 
