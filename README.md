@@ -187,7 +187,9 @@ Use your already-defined methods and load in the "navigation" module. It's prett
       frequency: 0,
       message: "Bugs are cool.",
       beacon: false
-    };```
+    };
+```
+   
 
 ## Challenge #7
 You look over at LARRY, expecting him to quack out his next prompt, but it seems LARRY is now the one malfunctioning! You open up the manual, and find the section on LARRY. Apparently, loading modules can sometimes cause LARRY to get stuck in an infinite loop.
