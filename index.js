@@ -1,24 +1,27 @@
 var navigation = {
-  x: -2,
-  y: "Banana",
-  z: "Beep",
-  speed: "raaaaid"
-};
+      x: -2,
+      y: 4,
+      z: 7,
+      speed: "raaaaid"
+    };
 
-var ship = {
-  powerOn: false,
-  modules: [],
-  antenna: {
-    active: false
-  }
-};
+    var ship = {
+      powerOn: false,
+      modules: [],
+      antenna: {
+        active: false
+      }
+    };
 
-var radio = {
-  frequency: "Kenneth",
-  message: "Bugs are cool.",
-  beacon: false
-};
-
+    var radio = {
+      range: {
+        low: 88,
+        high: 108,
+      },
+      frequency: 0,
+      message: "Bugs are cool.",
+      beacon: false
+    };
 var essential;
 
 function powerOn() {
@@ -68,7 +71,10 @@ function findModuleIndex(name) {
 loadModule(findModuleIndex("propulsion"));
 loadModule(findModuleIndex("navigation"));
 
+function resetLARRY() {
+  for(var i = 0; i < 10; i++) {
+    LARRY.quack(); 
+  }
+}
 
-
-
-
+resetLARRY();
