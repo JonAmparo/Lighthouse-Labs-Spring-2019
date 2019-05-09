@@ -221,3 +221,14 @@ The little duck-shaped robot shudders back and forth for a moment, and his eyes 
 This is where you learn about something called JSON. JSON stands for JavaScript Object Notation, and it allows us to express an entire JS object as a string. There’s a built-in function in JavaScript that will take in an object and turn it into JSON. That function is ```JSON.stringify()``` - if you pass your object to that function as a parameter, it turns into a string.
 
 You need to write a function called ```setMessage()```. This function should set the ```message``` property on the ```radio``` object to be the JSON version of the ```navigation``` object. Don't forget you need to call your ```setMessage()``` function.
+
+>**Hint**
+>
+>Looks like we've got to make a couple of steps now to get going. You can [read the docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) here on how to turn a JavaScript object into a string using ```JSON.stringify```. There are some good examples there for you.
+>
+>Think about the order of things you need to do:
+>
+>- Make a new function called ```setMessage()```
+>- Within that function, you need to access the ```message``` property of the ```radio``` object (Remember you can do this using the '.' operator)
+>- Then you need to make sure you are setting ```message``` property to the JSON version of the ```navigation``` object
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
