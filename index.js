@@ -81,3 +81,9 @@ resetLARRY();
 
 findModuleIndex("communication");
 loadModule(findModuleIndex("communication"));
+
+function setMessage() {
+  radio.message = JSON.stringify(navigation);
+}
+
+setMessage();
