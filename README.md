@@ -164,7 +164,7 @@ Use your already-defined methods and load in the "navigation" module. It's prett
 
 **Challenge 7 Global Objects**
 
-```    var navigation = {
+```var navigation = {
       x: -2,
       y: 4,
       z: 7,
