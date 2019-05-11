@@ -93,3 +93,7 @@ function activateBeacon() {
 }
 
 activateBeacon();
+
+function setFrequency() {
+	radio.frequency = (radio.range.low + radio.range.high) / 2;
+}
