@@ -97,3 +97,9 @@ activateBeacon();
 function setFrequency() {
 	radio.frequency = (radio.range.low + radio.range.high) / 2;
 }
+
+function initialize() {
+	navigation.x = 0;
+	navigation.y = 0;
+	navigation.z = 0;
+}
