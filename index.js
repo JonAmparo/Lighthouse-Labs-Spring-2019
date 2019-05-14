@@ -103,3 +103,15 @@ function initialize() {
 	navigation.y = 0;
 	navigation.z = 0;
 }
+
+function calibrateX() {
+  for(var i = 0; i < 13; i++) {
+    var signal = checkSignal();
+  if(signal !== undefined) {
+    navigation.x = signal;
+    break;
+    }
+  }
+}
+
+calibrateX();
