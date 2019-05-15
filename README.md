@@ -311,3 +311,12 @@ Don't forget to call your ```calibrateX()``` function to activate it!
 >The ```checkSignal()``` function returns a value that is either a number or ```undefined```. Since you're looking for a number you'll need >to check to make sure the result of ```checkSignal()``` is not undefined. [Here is a resource](https://flaviocopes.com/how-to-check-undefined-property-javascript/) that can help guide you on how to check >if a value is not ```undefined```.
 
 [Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
+
+## Challenge #14
+"X Calibrated!" LARRY quacks happily. "Y and Z need calibration now! QUACK!"
+
+Let's write calibrateY() and calibrateZ(). The manual says you'll need to loop from 1 to 60, and again you have to call checkSignal() each time.
+
+>Take everything you did for the last challenge and re-do it for Y and Z, but don't forget to increase the for loop size and to >call the calibrateX, calibrateY and calibrateZ functions in order!
+>
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
