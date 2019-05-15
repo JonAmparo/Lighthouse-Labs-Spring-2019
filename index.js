@@ -114,8 +114,6 @@ function calibrateX() {
   }
 }
 
-calibrateX();
-
 function calibrateY() {
   for(var i = 0; i < 61; i++) {
     var signal = checkSignal();
@@ -125,8 +123,6 @@ function calibrateY() {
     }
   }
 }
-
-calibrateY();
 
 function calibrateZ() {
   for(var i = 0; i < 61; i++) {
@@ -138,4 +134,8 @@ function calibrateZ() {
   }
 }
 
-calibrateZ();
+function calibrate() {
+  calibrateX();
+  calibrateY();
+  calibrateZ();
+}
