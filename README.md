@@ -306,9 +306,9 @@ Don't forget to call your ```calibrateX()``` function to activate it!
 >
 >There are a few pieces that need to be put together to accomplish this challenge. Fortunately most of them are concepts we >already know! You're going to want start by writing a ```for``` loop or a ```while``` loop that loops 12 times.
 >
->This is another case where the function you need to use inside yours has already been built for you. Each time you run your loop, call ```checkSignal()```. You should assign the result of this function to a variable, it should look something like this ```var >response = doSomething()```
+>This is another case where the function you need to use inside yours has already been built for you. Each time you run your loop, call ```checkSignal()```. You should assign the result of this function to a variable, it should look something like this ```var response = doSomething()```
 >
->The ```checkSignal()``` function returns a value that is either a number or ```undefined```. Since you're looking for a number you'll need >to check to make sure the result of ```checkSignal()``` is not undefined. [Here is a resource](https://flaviocopes.com/how-to-check-undefined-property-javascript/) that can help guide you on how to check >if a value is not ```undefined```.
+>The ```checkSignal()``` function returns a value that is either a number or ```undefined```. Since you're looking for a number you'll need to check to make sure the result of ```checkSignal()``` is not undefined. [Here is a resource](https://flaviocopes.com/how-to-check-undefined-property-javascript/) that can help guide you on how to check if a value is not ```undefined```.
 
 [Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
 
@@ -329,7 +329,7 @@ You don't need call the ```calibrate()```
 
 >**Hint**
 >
->It doesn't matter which order you call ```calibrateX()```, ```calibrateY()```, and ```calibrateZ()```, but you must do all three of them inside >the ```calibrate()``` method.
+>It doesn't matter which order you call ```calibrateX()```, ```calibrateY()```, and ```calibrateZ()```, but you must do all three of them inside the ```calibrate()``` method.
 >
 >This is a process we call 'abstraction' and 'automation'. Writing a function that calls other functions we have already written allows us to automate several steps we've built. You've already written the three calibration functions, call them one after the other.
 >
