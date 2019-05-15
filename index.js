@@ -115,3 +115,27 @@ function calibrateX() {
 }
 
 calibrateX();
+
+function calibrateY() {
+  for(var i = 0; i < 61; i++) {
+    var signal = checkSignal();
+  if(signal !== undefined) {
+    navigation.y = signal;
+    break;
+    }
+  }
+}
+
+calibrateY();
+
+function calibrateZ() {
+  for(var i = 0; i < 61; i++) {
+    var signal = checkSignal();
+  if(signal !== undefined) {
+    navigation.z = signal;
+    break;
+    }
+  }
+}
+
+calibrateZ();
