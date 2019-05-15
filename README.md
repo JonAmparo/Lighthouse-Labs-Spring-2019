@@ -315,7 +315,7 @@ Don't forget to call your ```calibrateX()``` function to activate it!
 ## Challenge #14
 "X Calibrated!" LARRY quacks happily. "Y and Z need calibration now! QUACK!"
 
-Let's write calibrateY() and calibrateZ(). The manual says you'll need to loop from 1 to 60, and again you have to call checkSignal() each time.
+Let's write ```calibrateY()``` and ```calibrateZ()```. The manual says you'll need to loop from 1 to 60, and again you have to call checkSignal() each time.
 
 >Take everything you did for the last challenge and re-do it for Y and Z, but don't forget to increase the for loop size and to >call the calibrateX, calibrateY and calibrateZ functions in order!
 >
