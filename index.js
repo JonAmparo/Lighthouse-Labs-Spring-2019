@@ -139,3 +139,10 @@ function calibrate() {
   calibrateY();
   calibrateZ();
 }
+
+function setSpeed(speed) {
+  var speed = parseInt(speed);
+  if(speed >= 0) {
+    navigation.speed = speed;
+  }
+}
