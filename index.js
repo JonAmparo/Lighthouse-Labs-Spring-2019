@@ -146,3 +146,9 @@ function setSpeed(speed) {
     navigation.speed = speed;
   }
 }
+
+function activateAntenna() {
+  ship.antenna.active = true;
+}
+
+activateAntenna();
