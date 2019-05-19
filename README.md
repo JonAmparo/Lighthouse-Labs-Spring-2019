@@ -386,6 +386,7 @@ Your function will need to follow a precise order:
 - set the frequency on the radio
 - set the antenna to active
 - send your announcement
+
 You've already written all the code to complete this challenge with a few minor tweaks you'll be phoning home in no time. Unfortunately this requires manual configuration, so you'll need to call your ```configureBroadcast()``` function to kick things off
 
 PS. Remember to disable your previous frequency, antenna and announcement function calls as they were out of order!
