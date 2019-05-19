@@ -151,7 +151,7 @@ function activateAntenna() {
   ship.antenna.active = true;
 }
 
-activateAntenna();
+//activateAntenna();
 
 function sendBroadcast() {
    for(var i = 0; i < 100; i++) {
@@ -159,4 +159,17 @@ function sendBroadcast() {
    }
 }
 
-sendBroadcast();
+//sendBroadcast();
+
+function disableFrequency() {
+	radio.frequency = 0;
+}
+
+function configureBroadcast() {
+	//disableFrequency();
+	setFrequency();
+	activateAntenna();
+	sendBroadcast();
+}
+
+configureBroadcast();
