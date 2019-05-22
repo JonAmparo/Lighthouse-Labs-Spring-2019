@@ -412,8 +412,8 @@ Write a function called ```decodeMessage(message)```. This function takes in a c
 
 This function is much more complicated than what you have had to build until now, and there are multiple ways you could solve this, so you head to your manual to see what it says about decoding messages. The manual suggests you should read about:
 
-Splitting a string into an array of characters using ```message.split('')```. Read more [here](https://www.w3schools.com/jsref/jsref_split.asp)
-Joining an array of characters back into a string using ```message.join('')```. Read more [here](https://www.w3schools.com/jsref/jsref_join.asp)
+- Splitting a string into an array of characters using ```message.split('')```. Read more [here](https://www.w3schools.com/jsref/jsref_split.asp)
+- Joining an array of characters back into a string using ```message.join('')```. Read more [here](https://www.w3schools.com/jsref/jsref_join.asp)
 Take a look at the hints if you need more help
 
 Your decoder is automatic, so no need to call this function
@@ -432,3 +432,30 @@ Your decoder is automatic, so no need to call this function
 >
 >[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
 
+## Challenge #21
+"Let's QUACK head for home!" LARRY states anxiously. However, you realize quickly that the x, y and z coordinates you've set in your ```navigation``` object won't get you precisely to Earth. You need to confirm with your home base before resetting the nagivation's x, y and z coordinates. It looks like you'll need to write a function called ```returnToEarth()```. This function is a bit complicated, so you ask LARRY to walk you through it. LARRY responds, quacking that your function should:
+
+- Call the built-in ```broadcast()``` function three times. Each of these calls should pass either "x", "y" or "z" as a parameter.
+  - Store the response from each ```broadcast()``` call in it's own variable (The ```broadcast()``` function returns a coded-message from Earth with the correct coordinate to return home in [HEX](https://whatis.techtarget.com/definition/hexadecimal)! Check out the hints for more on this)
+- Decode the returned message using the ```decodeMessage()``` function you wrote earlier
+- Change the decoded hex-coordinate to an integer using [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+- Set each of the ```navigation``` object's x, y and z parameters to the integer coordinates
+Call your ```returnToEarth()``` and head for home. "QUACK" shouts LARRY one final time "That's one small step for ducks and a giant leap for duck-kind." Mission complete.
+
+>**Hint**
+>
+>You need ask LARRY for more guidance on this one, it's a lot of steps to go through. Luckily LARRY is happy to help in the hints below!
+>
+>
+>To get started, you'll need to make three **individual** calls to the ```broadcast()``` function like so:
+>
+>- ```broadcast("x")```
+>- ```broadcast("y")```
+>- ```broadcast("z")```
+>You'll need to save the response from each of these calls into it's own variable, that you can then pass to your ```decodeMessage()``` function
+>
+>Don't forget the response from ```broadcast()``` is a ```hexidecimal```! You'll need to pass it through ```parseInt()``` like so ```parseInt(decodedmessage, base)``` with a second parameter as shown. You'll want to **Google hex base parseInt** to determine what number to pass as the base
+>
+>And after all of that, set the navigation objects coordinates, and head back down to Earth!
+>
+>[Click here to access the Help Forum.](https://21day-forum.lighthouselabs.ca/)
